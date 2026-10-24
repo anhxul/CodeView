@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "src/main.jsx", "postcss.config.js", "tailwind.config.js", "vite.config.js", "src/App.jsx"]
+}
