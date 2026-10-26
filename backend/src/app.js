@@ -20,7 +20,11 @@ app.use(helmet());
 // CORS
 app.use(
   cors({
-    origin: env.clientUrl,
+    origin: [
+      env.clientUrl,
+      'https://codeview-frontend.onrender.com',
+      'http://localhost:5173',
+    ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   })
